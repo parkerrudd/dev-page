@@ -1,0 +1,280 @@
+#workpage {
+    // height: 100vh;
+    @include flexCenter(column);
+
+    h1 {
+        color: $polishedPine;
+        text-align: center;
+        padding-bottom: 1vh;
+        margin-top: 10vh;
+    }
+
+    hr {
+        color: $polishedPine;
+        border-bottom: 1px solid $polishedPine;
+        border-top: 1px solid $polishedPine;
+        border-left: 1px solid $polishedPine;
+        border-right: 1px solid $polishedPine;
+    }
+
+    .find-me-a-song {
+        @include flexCenter(row);
+        color: $paleBlue;
+        gap: 5vw;
+        padding: 5vw;
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
+        ul {
+            @include flexCenter(row);
+            gap: 3vw;
+            padding-top: 3vh;
+            color: $polishedPine;
+            list-style-type: circle;
+        }
+    }
+
+    .pr-music-container {
+        @include flexCenter(row);
+        gap: 5vw;
+        padding: 5vw;
+        color: $paleBlue;
+
+        h5 {
+            padding-bottom: 2vh;
+            color: $polishedPine;
+            transition: .2s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        ul {
+            @include flexCenter(row);
+            gap: 5vw;
+            padding-top: 2vh;
+            color: $polishedPine;
+            list-style-type: circle;
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+    }
+
+    .blackjack-container {
+        @include flexCenter(row);
+        gap: 5vw;
+        padding: 5vw;
+        color: $paleBlue;
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        h5 {
+            padding-bottom: 2vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
+        ul {
+            @include flexCenter(row);
+            gap: 5vw;
+            padding-top: 2vh;
+            color: $polishedPine;
+            list-style-type: circle;
+        }
+    }
+
+    .reverb-calc-container {
+        @include flexCenter(row);
+        gap: 5vw;
+        padding: 5vw;
+        color: $paleBlue;
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        h5 {
+            padding-bottom: 2vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
+        ul {
+            @include flexCenter(row);
+            gap: 5vw;
+            padding-top: 2vh;
+            color: $polishedPine;
+            list-style-type: circle;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .find-me-a-song {
+            @include flexCenter(column);
+
+            img {
+                width: 60vw;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 10vw;
+            }
+        }
+
+        .pr-music-container {
+            @include flexCenter(column-reverse);
+
+            img {
+                width: 60vw;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 10vw;
+            }
+
+        }
+
+        .blackjack-container {
+            @include flexCenter(column);
+
+            img {
+                width: 60vw;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 10vw;
+            }
+        }
+
+        .reverb-calc-container {
+            @include flexCenter(column-reverse);
+
+            img {
+                width: 60vw;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 10vw;
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+       .find-me-a-song {
+        ul {
+            gap: 7vw;
+            padding-left: 7vw;
+            font-size: .8em;
+        }
+       } 
+
+       .blackjack-container {
+           ul {
+               gap: 7vw;
+               padding-left: 7vw;
+               font-size: .8em;
+           }
+       }
+
+       .pr-music-container {
+           ul {
+               font-size: .8em;
+           }
+       }
+
+       .reverb-calc-container {
+           ul {
+               font-size: .8em;
+           }
+       }
+    }
+
+    
+}
